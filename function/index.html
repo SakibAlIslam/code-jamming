@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex justify-center mt-[30px] gap-4">
+      <div class="block p-16 rounded-lg shadow-lg bg-indigo-100 w-[75%] shadow-indigo-500/50">
+        <h3
+          class="text-gray-900 text-xl text-center leading-tight font-medium mb-4"
+        >
+          Summation
+        </h3>
+        <input
+          type="text"
+          class="input-1 form-control block px-3 py-1.5 text-lg  text-gray-600 h-16 font-bold bg-white bg-clip-padding border border-solid border-green-400 rounded transition ease-in-out m-0 w-full focus:text-cyan-600 focus:bg-white focus:border-blue-600 focus:outline-none"
+          placeholder="Enter Your Value"
+        />
+        <input
+          type="text"
+          class="input-2 form-control block w-full px-3 py-1.5 text-lg font-bold text-gray-600  h-16 bg-white bg-clip-padding border border-solid border-green-400 rounded transition ease-in-out mt-5 focus:text-cyan-600 focus:bg-white focus:border-blue-600 focus:outline-none"
+          placeholder="Enter Your Value"
+        />
+        <button
+          type="button"
+          onclick="sum()"
+          class="totalButton w-full mt-5 inline-block px-6 py-2.5 bg-green-600 text-white font-bold text-lg leading-tight uppercase rounded shadow-lg shadow-green-500/50 hover:bg-blue-800 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:shadow-blue-500/50 focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out tracking-widest"
+        >
+          Total
+        </button>
+      </div>
+      <div
+        class="totalAmount bg-green-100 shadow-md shadow-green-500/50 self-center h-full rounded-lg py-5 px-6 mb-4 text-xl font-semibold text-green-600 tracking-wide"
+      >
+        Your Total Amount is 0 BDT!
+      </div>
+    </div>
+    <!-- deduction -->
+    <div class="flex justify-center mt-[40px] gap-4">
+        <div class="block p-16 rounded-lg shadow-lg bg-green-100 shadow-green-500/50 w-[75%]">
+          <h3
+            class="text-gray-900 text-xl text-center leading-tight font-medium mb-4"
+          >
+            Deduction
+          </h3>
+          <input
+            type="text"
+            class="input-3 form-control block px-3 py-1.5 text-lg  text-gray-600 h-16 font-bold bg-white bg-clip-padding border border-solid border-green-400 rounded transition ease-in-out m-0 w-full focus:text-cyan-600 focus:bg-white focus:border-blue-600 focus:outline-none"
+            placeholder="Enter Your Value"
+          />
+          <input
+            type="text"
+            class="input-4 form-control block w-full px-3 py-1.5 text-lg font-bold text-gray-600  h-16 bg-white bg-clip-padding border border-solid border-green-400 rounded transition ease-in-out mt-5 focus:text-cyan-600 focus:bg-white focus:border-blue-600 focus:outline-none"
+            placeholder="Enter Your Value"
+          />
+          <button
+            type="button"
+            onclick="deduction()"
+            class="deductionButton w-full mt-5 inline-block px-6 py-2.5  bg-blue-800 text-white font-bold text-lg leading-tight uppercase rounded shadow-lg shadow-green-500/50 hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:shadow-green-500/50 focus:ring-0 active:bg-green-600 active:shadow-lg transition duration-150 ease-in-out tracking-widest"
+          >
+            Total
+          </button>
+        </div>
+        <div
+          class="deductedAmount bg-indigo-100 shadow-indigo-500/50 shadow-md self-center h-full rounded-lg py-5 px-6 mb-4 text-xl font-semibold text-green-600 tracking-wide"
+        >
+          Your Total Amount is 0 BDT!
+        </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
